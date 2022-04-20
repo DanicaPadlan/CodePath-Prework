@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="https://glitch.com/favicon.ico" />
+
+    <title>Light Memory Game</title>
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>
+  <body>
+    <!-- this is the start of content -->
+    <h1>
+      Light Memory Game
+    </h1>
+    <p>
+      Welcome to the Light Memory Game! You must memorize the secret 
+      pattern that the computer plays and then play it back.
+    </p>
+    
+    <p>Press the 'Start' button to begin</p>
+    
+    <button id="startBtn" onclick="startGame()">Start</button>
+    <button id="stopBtn" class="hidden" onclick="stopGame()">Stop</button>
+    
+    <p id="timer" class="hidden"></p>
+    
+    <div id="gameButtonArea">
+      <button id= "button1" onclick ="guess(1)"  onmousedown="startTone(1)" onmouseup="stopTone()"></button>
+      <!-- <img id="button1:active button1:lit" class="hidden" src="https://cdn.glitch.global/454a31df-1f51-421c-a685-56558affcc1e/emerald_PNG22303.png?v=1650384119110" alt="emerald" width="200" height="200"> -->
+      <button id= "button2" onclick ="guess(2)"  onmousedown="startTone(2)" onmouseup="stopTone()"></button>
+      <!-- <img id="button2Rep" class="hidden" src="https://cdn.glitch.global/454a31df-1f51-421c-a685-56558affcc1e/lapislazulipng.png?v=1650384123327" alt="lapis-lazuli" width="200" height="200"> -->
+      <button id= "button3" onclick = "guess(3)" onmousedown="startTone(3)" onmouseup="stopTone()"></button>
+      <!-- <img id="button3Rep" class="hidden" src="https://cdn.glitch.global/454a31df-1f51-421c-a685-56558affcc1e/toppng.com-oval-ruby-stone-295x295.png?v=1650384134207" alt="ruby" width="200" height="200"> -->
+      <button id= "button4" onclick = "guess(4)" onmousedown="startTone(4)" onmouseup="stopTone()"></button>
+      <!-- <img id="button4Rep" class="hidden" src="https://cdn.glitch.global/454a31df-1f51-421c-a685-56558affcc1e/Citrine-PNG-Photo.png?v=1650384114717" alt="topaz" width="200" height="200"> -->
+      <button id="button5" onclick = "guess(5)" onmousedown="startTone(5)" onmouseup="stopTone()"></button>
+      <!-- <img id="button5Rep" class="hidden" src="https://cdn.glitch.global/454a31df-1f51-421c-a685-56558affcc1e/pngegg.png?v=1650385083241" alt="amber" width="200" height="200"> -->
+      <button id= "button6" onclick = "guess(6)" onmousedown="startTone(6)" onmouseup="stopTone()"></button>
+      <!-- <img id="button6Rep" class="hidden" src="https://cdn.glitch.global/454a31df-1f51-421c-a685-56558affcc1e/NicePng_gemstone-png_1233257.png?v=1650384127368" alt="amethyst" width="200" height="200"> -->
+    </div>
+  </body>
+</html>
